@@ -1,0 +1,180 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.38545292282498367 -0.8448589760685178 -0.3709977827994835 1.7170906136154738
+  position -5.337469258214433 4.737213113786689 0.4112357010448657
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 3
+}
+Thymio2 {
+  translation -1.4 0 0
+  rotation 0 1 0 1.5708
+  controller "my_controller"
+  controllerArgs ""
+}
+CardboardBox {
+  translation 0.23 0.14 0.1
+  rotation 0 1 0 -2.6180003061004253
+  size 0.1 0.1 0.1
+  mass 1
+}
+DEF RED_LINE Solid {
+  translation 0.9 0.0402 0
+  rotation 0 1 0 1.5708
+  children [
+    DEF RED_LINE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Plane {
+        size 3 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE RED_LINE_SHAPE
+}
+CardboardBox {
+  translation 0.23 0.14 -0.3
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(6)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation 0.23 0.14 0.4
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(5)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.256 0.14 -0.12
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(1)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.262 0.14 0.3
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(4)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation 0 0.14 1.2
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(9)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.4 0.14 1.2
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(10)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.255 0.14 -0.56
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(3)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.75 0.14 -0.03
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(2)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.6 0.14 0.5
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(8)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -1 0.14 1
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(11)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -1.05 0.14 -0.27
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(7)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -1.07 0.14 -1
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(12)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -1.4 0.14 -0.7
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(13)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -1.4 0.14 -1.2
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(14)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+CardboardBox {
+  translation -0.7 0.14 -1.2
+  rotation 0 1 0 -2.6180003061004253
+  name "cardboard box(15)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+SoccerBall {
+  translation -1 0.1 0.4
+}
+SoccerBall {
+  translation -0.3 0.1 0.9
+  name "soccer ball(4)"
+}
+SoccerBall {
+  translation -1.2 0.1 0.8
+  name "soccer ball(7)"
+}
+SoccerBall {
+  translation -1.7 0.1 0.5
+  name "soccer ball(8)"
+}
+SoccerBall {
+  translation 0.1 0.1 0.8
+  name "soccer ball(5)"
+}
+SoccerBall {
+  translation -0.7 0.1 -0.6
+  name "soccer ball(1)"
+}
+SoccerBall {
+  translation -0.3 0.1 -1
+  name "soccer ball(3)"
+}
+SoccerBall {
+  translation 0.3 0.1 -0.9
+  name "soccer ball(2)"
+}
